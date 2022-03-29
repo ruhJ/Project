@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/appointmentPage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tukdoji Hospital & Neuro Surgenist Nagpur</title>
+</head>
+
+<body>
+
+    <nav id="title">
+        <img id="logo" src="images/logo.png" alt="logo">
+        <div class="_heading">
+            <h1 id="name">Tukdoji Hospital & Neuro Surgenist, </br>Nagpur</h1>
+            <h3>Since 1990</h3>
+        </div>
+    </nav>
+    <div id="navigation">
+        <ul>
+            <li onclick="Home()">Home</li>
+            <li onclick="Facilities()">Facilities</li>
+            <li onclick="Pricing()">Pricing</li>
+            <li onclick="AboutUs()">About us</li>
+            <li onclick="ContactUs()">Contact Us</li>
+        </ul>
+    </div>
+    <div id="appointment">
+        <h3>Appointment</h3>
+        <form>
+            <div class="inputs">
+
+                <input class="inputlabel" type="text" placeholder="Name" id="Name"></input>
+                <input class="inputlabel" type="number" placeholder="Phone No" id="phoneNo"></input>
+                <input class="inputlabel" type="text" placeholder="Doctor Name" id="doctorName"
+                    list="doctorNameSuggestion" />
+                <datalist id="doctorNameSuggestion">
+                    <option>Dr. Payal S Agrawal</option>
+                    <option>Dr. Sumeet Bharti</option>
+                    <option>Dr. Irshad Pathan</option>
+                    <option>Dr. Archana Menon</option>
+                </datalist>
+                <input class="inputlabel" type="date" placeholder="Date" id="date"></input>
+                <input class="inputlabel" type="time" placeholder="Time" id="time"></input>
+                <button class="inputlabel" id="appointmentButton">Make Appoinment</button>
+                <button class="inputlabel" id="appointmentButton">Appointment History</button>
+                <button class="inputlabel" id="logout">Log out</button>
+            </div>
+        </form>
+    </div>
+    <div id="history">
+    </div>
+    <script src="js/appointmentpage.js"></script>
+
+</body>
+
+</html>
