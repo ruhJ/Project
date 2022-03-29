@@ -34,3 +34,4 @@ function doctorLogin() {
     window.open("doctor_login.html", "_blank")
     window.close()
 }
+
